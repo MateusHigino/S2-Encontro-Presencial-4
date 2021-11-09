@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de eventos</title>
+  <link rel="stylesheet" href="css/eventos.css">
+</head>
+<body>
+  <header>
+    <h1>Exemplos de eventos com JS.</h1>
+    <p>Nessa página iremos abordar alguns 
+      exemplos de eventos no Javascript</p>
+    <p>Páginas de referências:</p>
+    <p>Página Mozzila: <a href="https://developer.mozilla.org/pt-BR/docs/Web/Events" target="_blank">Clique aqui</a></p>
+    <p>Página do W3C School: <a href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="_blank">Clique aqui</a></p>
+  </header>
+  <section id="clicaveis">
+    <div><h1>Nessa Seção iremos ver eventos de click.</h1></div>
+    <div>
+      <h4>Evento de click no botão:</h4>
+      <button class="clicavel">Clique aqui</button>
+    </div>
+    <div>
+      <h4>Evento de click em imagem:</h4>
+      <img class="clicavel" src="imagens/twitter.png" alt="twitter">
+    </div>
+    <div>
+      <h4>Evento de click em texto:</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing 
+        elit. Aliquam, eveniet. Doloremque incidunt
+         veritatis 
+         <span class="clicavel"><b>-->Clique em mim <--</b></span> neque 
+         sed dolores mollitia tempora 
+         cupiditate, illum excepturi beatae libero,
+          placeat tempore nisi velit optio magni nulla.
+      </p>
+    </div>
+    <div>
+      <h4>Cuidado com o efeito Bubbling.</h4>
+      <div class="clicavel" style="background-color: lime;">
+        <p>teste de clique clique
+          <span class="clicavel"><b>-->Clique em mim <--</b></span>
+        </p>
+      </div>
+    </div>
+
+  </section>
+  <section id="focaveis">
+    <div><h1>Nessa Seção iremos ver eventos de focus e blur.</h1></div>
+    <div>
+      <h4>Evento de focus e blur no botão:</h4>
+      <button class="focavel">Clique aqui</button>
+    </div>
+    <div>
+      <h4>Evento de focus e blur no input:</h4>
+      <input type="text" class="focavel" placeholder="Digite algo aqui" />
+    </div>
+
+  </section>
+  <section id="ExemploFade">
+    <h4>Exemplo de uso do fade-in e fade-out com Javascript puro!</h4>
+    <div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro accusamus, aperiam provident aliquam officiis necessitatibus quasi laudantium harum reiciendis fugit voluptatum similique vitae quo ea animi est repudiandae odit ex!</p>
+    </div>
+    <div class="fade fade-visivel">
+      <img src="imagens/joystick.jpg" alt="" style="width: 60%;">
+    </div>
+    <div>
+      <button onclick="chamarfade('in');">Usar Fade-in</button>
+      <button onclick="chamarfade('out');">Usar Fade-out</button>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="javascript/eventos.js"></script>
+</body>
+</html>

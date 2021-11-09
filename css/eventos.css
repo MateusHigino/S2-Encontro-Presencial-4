@@ -1,0 +1,12 @@
+.clicavel:hover {
+  cursor: pointer;
+}
+.cor-foco {
+  background-color: lime;
+}
+.fade-visivel {
+  display: block;
+}
+.fade-visivel.hide {
+  display: none;
+}
